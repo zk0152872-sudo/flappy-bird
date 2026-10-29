@@ -1,0 +1,122 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+    padding: 20px;
+}
+
+.game-container {
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 18px;
+    font-size: 36px;
+    color: #ffd43b;
+    text-shadow: 3px 3px 0 #e67e22;
+}
+
+.game-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border: 5px solid white;
+    border-radius: 12px;
+    box-shadow: 0 10px 35px #0006;
+    background: #70c5ce;
+}
+
+canvas {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.game-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    padding: 20px;
+    background: #102a4380;
+    text-align: center;
+}
+
+.game-overlay h2 {
+    font-size: 32px;
+    color: #ffe066;
+}
+
+.game-overlay p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+#startBtn {
+    padding: 13px 28px;
+    border: none;
+    border-radius: 30px;
+    background: #ffb703;
+    color: #222;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#startBtn:hover {
+    background: #fb8500;
+    transform: scale(1.05);
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+    padding: 14px 20px;
+    border-radius: 10px;
+    background: #ffffff18;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.score-board span {
+    color: #ffd43b;
+}
+
+.instructions {
+    margin-top: 15px;
+    color: #dbeafe;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+@media (max-width: 450px) {
+    h1 {
+        font-size: 29px;
+    }
+
+    .game-overlay h2 {
+        font-size: 26px;
+    }
+
+    .game-overlay p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="rus.js" defer></script>
+</head>
+<body>
+
+    <main class="game-container">
+        <h1>Flappy Bird</h1>
+
+        <div class="game-wrapper">
+            <canvas id="gameCanvas" width="400" height="600"></canvas>
+
+            <div class="game-overlay" id="overlay">
+                <h2 id="overlayTitle">Flappy Bird</h2>
+                <p id="overlayMessage">Press SPACE or click to fly!</p>
+                <button id="startBtn">Start Game</button>
+            </div>
+        </div>
+
+        <div class="score-board">
+            <p>Score: <span id="score">0</span></p>
+            <p>Best: <span id="bestScore">0</span></p>
+        </div>
+
+        <p class="instructions">
+            Press SPACE / ↑ or click to flap your wings.
+        </p>
+    </main>
+</body>
+</html>
